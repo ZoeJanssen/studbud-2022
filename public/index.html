@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Hello, world!</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="icon" href="img/favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form id="taskform" >
+    <label for= "task"> Task: </label>
+    <input type= "text" name= "task" id="taskInput">
+
+
+<!--   form setup -->
+<!-- model view container, single source of truth - array, which can be displayed in many ways such as poulating notifications or displaying on screen. -->
+    
+    <br>
+  
+ <!--Date input -->
+  <label for= "dueDate">Due Date: </label>
+    <input type= "date" name="dueDate" id="dueDateInput" >
+  <br>
+    
+    <!--Timee input -->
+  <label for= "completionTime">Completion Time: </label>
+    <input type= "time" name="completionTime" id="completionTimeInput" >
+
+      <br>
+
+    
+<label for = "estimatedTime">Estimated Completion Time (in minutes): </label>
+  <input type= "number" name="estimatedTime" id="estimatedTimeInput">
+    
+    <!--Priority -->
+  <br>
+
+  <label for = "priority">Task Priority: </label>
+  <select name="priority" id="priorityInput">
+<option value ="">Select One</option>
+<option value= "low">Low</option>
+  <option value= "medium">Medium</option>
+  <option value= "High">High</option>
+  </select>
+
+    <br>
+    
+    <button type= "submit">Submit</button>
+    </form>
+  <ul id= "tasklist">
+    </ul>
+</body>
+</html>
+
+
+<script src="script.js"></script>
+
